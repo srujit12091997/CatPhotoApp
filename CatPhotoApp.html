@@ -1,0 +1,134 @@
+<head>
+    <!-- Metadata and information about the document -->
+    <meta charset="UTF-8">
+    <!-- Character encoding set to UTF-8, ensuring proper display of special characters -->
+    <title>CatPhotoApp</title>
+    <!-- Title of the web page displayed on the browser tab -->
+  </head>
+
+  <body>
+    <!-- The main content of the document starts here -->
+    <main>
+      <!-- Main section of the page for the most important content -->
+      <h1>CatPhotoApp</h1>
+      <!-- Main heading for the app's title -->
+
+      <section>
+        <!-- Section for cat photos -->
+        <h2>Cat Photos</h2>
+        <!-- Subheading for the cat photos section -->
+
+        <!-- TODO: Add link to cat photos -->
+        <!-- Placeholder comment indicating where you plan to add more links to cat photos -->
+
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <!-- A paragraph with a link to a gallery of cat photos that opens in a new tab -->
+
+        <a href="https://freecatphotoapp.com">
+          <!-- Link wrapping around an image -->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+          <!-- Displays an image of a relaxing cat; the alt text describes the image for accessibility and SEO -->
+        </a>
+      </section>
+
+      <section>
+        <!-- Section for lists related to cats -->
+        <h2>Cat Lists</h2>
+        <!-- Subheading for the cat lists section -->
+
+        <h3>Things cats love:</h3>
+        <!-- Sub-subheading for things that cats love -->
+
+        <ul>
+          <!-- Unordered list for items cats love -->
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+
+        <figure>
+          <!-- Figure element to group image and caption -->
+          <!-- Image of lasagna with a caption -->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>
+          <!-- Emphasized text in the caption -->
+        </figure>
+
+        <h3>Top 3 things cats hate:</h3>
+        <!-- Sub-subheading for things cats hate -->
+
+        <ol>
+          <!-- Ordered list for items cats hate -->
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+
+        <figure>
+          <!-- Figure element for grouping an image and its caption -->
+          <!-- Image of cats with a caption explaining their dislike for other cats -->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+          <!-- The word "hate" is bolded for emphasis -->
+        </figure>
+      </section>
+
+      <section>
+        <!-- Section for the form related to cat information -->
+        <h2>Cat Form</h2>
+        <!-- Subheading for the form section -->
+
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <!-- Form submission URL to the provided endpoint -->
+
+          <fieldset>
+            <!-- Fieldset to group related radio buttons for choosing indoor or outdoor cat -->
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <!-- Label for the radio button group -->
+            <label>
+              <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor
+              <!-- Radio button for 'Indoor' cat, selected by default -->
+            </label>
+
+            <label>
+              <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor
+              <!-- Radio button for 'Outdoor' cat -->
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <!-- Fieldset to group checkboxes for cat personality traits -->
+            <legend>What's your cat's personality?</legend>
+            <!-- Label for the personality checkboxes -->
+
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> 
+            <label for="loving">Loving</label>
+            <!-- Checkbox for 'Loving' personality, checked by default -->
+
+            <input id="lazy" type="checkbox" name="personality" value="lazy">
+            <label for="lazy">Lazy</label>
+            <!-- Checkbox for 'Lazy' personality -->
+
+            <input id="energetic" type="checkbox" name="personality" value="energetic">
+            <label for="energetic">Energetic</label>
+            <!-- Checkbox for 'Energetic' personality -->
+          </fieldset>
+
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <!-- Text input for the cat photo URL, required for form submission -->
+
+          <button type="submit">Submit</button>
+          <!-- Submit button for the form -->
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Footer section for additional info -->
+      <p>
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+        <!-- A link to the freeCodeCamp website -->
+      </p>
+    </footer>
+  </body>
+</html>
